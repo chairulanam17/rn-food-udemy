@@ -8,6 +8,7 @@ export default () => {
 
   const searchApi = async (searchTerm) => {
     console.log('woy bro!');
+
     try {
       const response = await yelp.get('/search', {
         params: {
@@ -21,9 +22,9 @@ export default () => {
       setPesanError('Ada yang salah nih');
     }
   };
-  useEffect(() => {
-    searchApi('pasta');
-  }, []);
+  // useEffect(() => {
+  //   searchApi('pasta');
+  // }, []);
 
   return [searchApi, results, pesanError];
   //   useEffect(() => {
