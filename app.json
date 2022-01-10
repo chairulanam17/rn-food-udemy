@@ -1,7 +1,9 @@
 {
   "expo": {
-    "name": "Food",
-    "slug": "Food",
+    "name": "Anam Food App",
+    "slug": "AnamFoodApp",
+    "privacy":"public",
+    "description":"Aplikasi untuk mencari fasilitas umum",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

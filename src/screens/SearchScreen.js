@@ -16,14 +16,14 @@ export default function SearchScreen() {
   };
 
   return (
-    <View>
+    <>
       <SearchBar
         term={term}
         onTermChange={setTerm}
         onTermSubmit={() => searchApi(term)}
       />
       {pesanError ? <Text>{pesanError}</Text> : null}
-      <Text>We have found {results.length} results</Text>
+
       <ScrollView>
         <ResultsList
           results={filterResultsByPrice('$')}
@@ -35,7 +35,7 @@ export default function SearchScreen() {
           title="Big Spender"
         />
       </ScrollView>
-    </View>
+    </>
   );
 }
 
