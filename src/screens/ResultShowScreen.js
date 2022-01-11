@@ -4,9 +4,8 @@ import { useRoute } from '@react-navigation/native';
 import yelp from '../api/yelp';
 
 export default function ResultShowScreen() {
-  //   console.log('ini data restonya', result);
   const [result, setResult] = useState(null);
-  //   const id = navigation.getParam('id');
+  
   const route = useRoute();
 
   //   console.log(result);
